@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+}
+
+.display {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px; 
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #777;
+}
+
+button[data-value="AC"] {
+    background-color: #e74c3c;
+}
+
+button[data-value="DEL"] {
+    background-color: #e67e22;
+}
+
+button[data-value="="] {
+    background-color: #27ae60;
+}
+
+button[data-value="AC"]:hover,
+button[data-value="DEL"]:hover,
+button[data-value="="]:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
