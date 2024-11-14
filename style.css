@@ -1,0 +1,128 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px; /* Increased max-width for larger container */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #2f2f2f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    width: 75%; /* Adjusted width for better alignment with buttons */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6b5b95;
+    box-shadow: 0 0 4px rgba(107, 91, 149, 0.4);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #6b5b95;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #563d7c;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px; /* Increased padding for buttons */
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+ul li.completed {
+    background-color: #d4edda;
+    color: #155724;
+    text-decoration: line-through;
+}
+
+ul li:hover {
+    background-color: #bed7f0;
+}
+
+ul li button {
+    padding: 6px 12px; /* Increased padding for button text */
+    background-color:   #6b5b95;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 5px; /* Spacing between buttons */
+}
+
+ul li button.complete {
+    color: #000; /* Changed to black */
+    background-color: #d4edda;
+}
+
+ul li button.edit {
+    color: #000; /* Changed to black */
+    background-color: #d1ecf1;
+}
+
+
+
+ul li button:hover.edit {
+    background-color: #b3d9e1; /* Light blue */
+}
+
+ul li button:hover.delete {
+    background-color: #f4b4b8; /* Light red */
+}
+
