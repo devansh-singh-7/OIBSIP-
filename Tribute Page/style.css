@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: brown;
+    color: black;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header p{
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+section {
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: auto; 
+}
+
+.quote-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.quote-container {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.quote {
+    font-size: 1.5em;
+    color: brown;
+    font-weight: bold;
+}
+
+.quote-author {
+    font-size: 1.2em;
+    color: brown;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    width: 60%; 
+    border-radius: 10px;
+}
+
+.bio {
+    text-align: center;
+    max-width: 800px;
+}
+
+.intro {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-line {
+    width: 50%;
+    height: 2px;
+    background-color: brown;
+    margin: 0 auto 20px auto; 
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
